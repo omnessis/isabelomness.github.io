@@ -39,11 +39,12 @@
 Throughout my academic career, I have built and evaluated machine learning models,
 worked extensively with data cleaning and analysis pipelines, and collaborated
 with other data scientists on applied projects.</p>
-<p>My work spans the full data science workflow, from writing SQL queries against
+<p>I have worked with the full data science workflow, from writing SQL queries against
 relational databases to training and deploying models on cloud platforms.
 I have hands-on experience with Python, SQL, AWS (S3, Athena, SageMaker),
 Docker, pandas, scikit-learn, matplotlib, and seaborn.</p>
-<p>My projects focus on turning complex data into clear, actionable insights.</p></div>
+<p>My projects focus on turning complex data into clear, actionable insights. 
+It is my priorty to be able to justify, validate, and reproduce my work. </p></div>
 </section>
 
 <!-- ===== Projects section ===== -->
@@ -95,19 +96,19 @@ Docker, pandas, scikit-learn, matplotlib, and seaborn.</p>
 
           <div class="detail-block">
             <h4>Problem</h4>
-            <p>As part of a cloud computing course project, I worked with a simulated agency operations scenario: given a 311 complaint at the moment it is filed, can we predict how long it will take to resolve? The dataset was a 170k-record instructor-provided sample of real NYC Open Data complaints, used to practice building end-to-end ML pipelines in a cloud environment.
+            <p>As part of a cloud computing course project, I worked with a simulated agency operations scenario: given a 311 complaint, can we predict how  long it will take to resolve? The dataset was a 170k-record instructor-provided  sample of real NYC Open Data complaints, used to practice building end-to-end ML  pipelines in a cloud environment.
 </p>
           </div>
 
           <div class="detail-block">
             <h4>Approach</h4>
-            <p>Pulled data from S3 using Athena SQL queries and engineered features including agency, borough, complaint type, zip code, day of week, hour of day, and same-day complaint volume. Trained a SageMaker Linear Learner estimator (regressor) on an 80/20 train/test split, then evaluated against a naive baseline using Batch Transform. The focus was on learning the full AWS ML workflow, from raw data in S3 through model training and evaluation on SageMaker.
+            <p>Pulled data from S3 using Athena SQL queries and engineered features including agency, borough, complaint type, zip code, day of week, hour of day, and same-day complaint volume. Trained a SageMaker Linear Learner estimator (regressor) on an 80/20 train/test split, then evaluated against a naive baseline. The focus was on learning the full AWS ML workflow,  from raw data in S3 through model training and evaluation on SageMaker.
 </p>
           </div>
 
           <div class="detail-block">
             <h4>Results &amp; Impact</h4>
-            <p>The SageMaker Linear Learner model achieved an MAE of 1.85 days and RMSE of 4.00 days, with an R² of 0.37, an improvement over the naive mean baseline (MAE 2.77, RMSE 5.05). The project demonstrates a full cloud ML workflow from raw S3 data through SageMaker training and Batch Transform inference.
+            <p>The SageMaker Linear Learner model achieved an MAE of 1.85 days and RMSE of 4.00 days, with an R^2 of 0.37, an improvement over the naive mean baseline (MAE 2.77, RMSE 5.05). The project demonstrates a full cloud ML workflow from raw S3 data through SageMaker training.
 </p>
           </div>
         </details>
@@ -166,13 +167,13 @@ Docker, pandas, scikit-learn, matplotlib, and seaborn.</p>
 
           <div class="detail-block">
             <h4>Problem</h4>
-            <p>s part of a data engineering and reproducibility course project, the goal was to analyze January sales data across regions and customer segments to answer the question: where is revenue coming from, and which customer segments are driving it? The secondary goal was to build the pipeline in a way that anyone could reproduce the results with a single command.
+            <p>As part of a data engineering and reproducibility course project, the goal of the existing project was to analyze January sales data across regions and customer segments. My personal goal was to build the pipeline in a way that anyone could reproduce the results with a single command.
 </p>
           </div>
 
           <div class="detail-block">
             <h4>Approach</h4>
-            <p>Wrote a Python pipeline with separate source files handling data loading and cleaning, and plot generation. The script merges sales transactions with a customer lookup table, builds a summary grouped by region, and outputs both a CSV report and two revenue bar charts. Packaged the entire workflow in a Dockerfile so results can be reproduced with either a virtual environment or a containerized run.
+            <p>Understood/edited a Python pipeline with separate source files handling data loading and cleaning, and plot generation. The script merges sales transactions with a customer lookup table, builds a summary grouped by region, and outputs both a CSV report and two revenue bar charts. Packaged the entire workflow in a Dockerfile so results can be reproduced with either a virtual environment or a containerized run.
 </p>
           </div>
 
@@ -243,7 +244,7 @@ Docker, pandas, scikit-learn, matplotlib, and seaborn.</p>
 
           <div class="detail-block">
             <h4>Approach</h4>
-            <p>Connected to a Dockerized MySQL instance of the Sakila database from a Jupyter notebook using Adminer. Wrote and validated a series of increasingly complex queries which involved multi-table JOINs linking actors to payments, GROUP BY and HAVING aggregations to filter high performers, a CTE to compare each actor&#39;s revenue against the store average, and a RANK() window function to produce a final ranked report table.
+            <p>Connected to a Dockerized MySQL instance of the Sakila database from a Jupyter notebook using Adminer. Wrote and validated a series of complex queries which involved multi-table JOINs linking actors to payments, GROUP BY and HAVING aggregations to filter high performers, a CTE to compare each actor&#39;s revenue against the store average, and a RANK() window function to produce a final ranked report table.
 </p>
           </div>
 
