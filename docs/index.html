@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Isabel Omness | Data Science Portfolio</title>
+
+  <!-- Base styles always loaded -->
+  <link rel="stylesheet" href="css/base.css" />
+
+  <!-- Theme stylesheet — controlled by `theme` in portfolio_config.yaml -->
+  <link rel="stylesheet" href="css/themes/sage.css" />
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-name">Isabel Omness</div>
+      <div class="header-tagline">Aspiring Data Scientist | Michigan State University Alumni</div>
+    </div>
+
+    <!-- Navigation bar -->
+    <nav class="site-nav">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ===== Main content (filled in by child templates) ===== -->
+  <main class="site-main">
+    
+
+<!-- ===== About section ===== -->
+<section id="about" class="section about-section">
+  <h2>About Me</h2>
+  <div class="about-text"><p>I am a proud Michigan State University data science student graduating in May 2026.
+Throughout my academic career, I have built and evaluated machine learning models,
+worked extensively with data cleaning and analysis pipelines, and collaborated
+with other data scientists on applied projects.</p>
+<p>My work spans the full data science workflow, from writing SQL queries against
+relational databases to training and deploying models on cloud platforms.
+I have hands-on experience with Python, SQL, AWS (S3, Athena, SageMaker),
+Docker, pandas, scikit-learn, matplotlib, and seaborn.</p>
+<p>My projects focus on turning complex data into clear, actionable insights.</p></div>
+</section>
+
+<!-- ===== Projects section ===== -->
+<section id="projects" class="section projects-section">
+  <h2>Projects</h2>
+
+  <div class="project-grid">
+    
+    <article class="project-card">
+
+      <!-- Project thumbnail image -->
+      <div class="project-image-wrapper">
+        <img
+          src="img/aws.png"
+          alt="Thumbnail for NYC 311 Ticket Resolution Time Prediction"
+          class="project-image"
+        />
+      </div>
+
+      <div class="project-body">
+        <h3 class="project-title">NYC 311 Ticket Resolution Time Prediction</h3>
+
+        <!-- Short summary written for a non-expert audience -->
+        <p class="project-summary">Built an end-to-end machine learning pipeline on AWS to predict how long NYC 311 complaints take to resolve. Used Amazon S3 for data storage, AWS Athena for querying, and Amazon SageMaker to train and deploy a linear regression model on 170k+ service requests across 15 city agencies.
+</p>
+
+        <!-- Tech stack as pill badges -->
+        <div class="tech-stack">
+          
+          <span class="tech-badge">Python</span>
+          
+          <span class="tech-badge">AWS S3</span>
+          
+          <span class="tech-badge">AWS Athena</span>
+          
+          <span class="tech-badge">Amazon SageMaker (Linear Learner)</span>
+          
+          <span class="tech-badge">pandas</span>
+          
+          <span class="tech-badge">numpy</span>
+          
+          <span class="tech-badge">Jupyter Notebooks</span>
+          
+        </div>
+
+        <!-- Collapsible details (problem / approach / results) -->
+        <details class="project-details">
+          <summary>More details</summary>
+
+          <div class="detail-block">
+            <h4>Problem</h4>
+            <p>As part of a cloud computing course project, I worked with a simulated agency operations scenario: given a 311 complaint at the moment it is filed, can we predict how long it will take to resolve? The dataset was a 170k-record instructor-provided sample of real NYC Open Data complaints, used to practice building end-to-end ML pipelines in a cloud environment.
+</p>
+          </div>
+
+          <div class="detail-block">
+            <h4>Approach</h4>
+            <p>Pulled data from S3 using Athena SQL queries and engineered features including agency, borough, complaint type, zip code, day of week, hour of day, and same-day complaint volume. Trained a SageMaker Linear Learner estimator (regressor) on an 80/20 train/test split, then evaluated against a naive baseline using Batch Transform. The focus was on learning the full AWS ML workflow, from raw data in S3 through model training and evaluation on SageMaker.
+</p>
+          </div>
+
+          <div class="detail-block">
+            <h4>Results &amp; Impact</h4>
+            <p>The SageMaker Linear Learner model achieved an MAE of 1.85 days and RMSE of 4.00 days, with an R² of 0.37, an improvement over the naive mean baseline (MAE 2.77, RMSE 5.05). The project demonstrates a full cloud ML workflow from raw S3 data through SageMaker training and Batch Transform inference.
+</p>
+          </div>
+        </details>
+
+        <!-- Links to the GitHub repo and notebook -->
+        <div class="project-links">
+          
+          <a href="https://github.com/omnessis/aws-nyc311-omnessis" target="_blank" rel="noopener" class="btn btn-repo">
+            View Repo
+          </a>
+          
+          
+        </div>
+      </div>
+
+    </article>
+    
+    <article class="project-card">
+
+      <!-- Project thumbnail image -->
+      <div class="project-image-wrapper">
+        <img
+          src="img/hw1.png"
+          alt="Thumbnail for Regional Sales Analysis with Python and Docker"
+          class="project-image"
+        />
+      </div>
+
+      <div class="project-body">
+        <h3 class="project-title">Regional Sales Analysis with Python and Docker</h3>
+
+        <!-- Short summary written for a non-expert audience -->
+        <p class="project-summary">Built a reproducible sales analysis pipeline that cleans and merges January transaction and customer data, produces a regional summary table, and generates revenue bar charts by region and customer segment. The project is fully containerized with Docker for easy reproducibility.
+</p>
+
+        <!-- Tech stack as pill badges -->
+        <div class="tech-stack">
+          
+          <span class="tech-badge">Python</span>
+          
+          <span class="tech-badge">pandas</span>
+          
+          <span class="tech-badge">matplotlib</span>
+          
+          <span class="tech-badge">seaborn</span>
+          
+          <span class="tech-badge">Docker</span>
+          
+          <span class="tech-badge">uv</span>
+          
+        </div>
+
+        <!-- Collapsible details (problem / approach / results) -->
+        <details class="project-details">
+          <summary>More details</summary>
+
+          <div class="detail-block">
+            <h4>Problem</h4>
+            <p>s part of a data engineering and reproducibility course project, the goal was to analyze January sales data across regions and customer segments to answer the question: where is revenue coming from, and which customer segments are driving it? The secondary goal was to build the pipeline in a way that anyone could reproduce the results with a single command.
+</p>
+          </div>
+
+          <div class="detail-block">
+            <h4>Approach</h4>
+            <p>Wrote a Python pipeline with separate source files handling data loading and cleaning, and plot generation. The script merges sales transactions with a customer lookup table, builds a summary grouped by region, and outputs both a CSV report and two revenue bar charts. Packaged the entire workflow in a Dockerfile so results can be reproduced with either a virtual environment or a containerized run.
+</p>
+          </div>
+
+          <div class="detail-block">
+            <h4>Results &amp; Impact</h4>
+            <p>Produced a 12-row regional summary CSV and two revenue charts — one by region and one by customer segment (added as a personalization of the original analysis using seaborn).The project demonstrates skills in Python, data cleaning and merging, visualization, and containerized  reproducibility.
+</p>
+          </div>
+        </details>
+
+        <!-- Links to the GitHub repo and notebook -->
+        <div class="project-links">
+          
+          <a href="https://github.com/omnessis/cmse492-hw01-omnessis" target="_blank" rel="noopener" class="btn btn-repo">
+            View Repo
+          </a>
+          
+          
+        </div>
+      </div>
+
+    </article>
+    
+    <article class="project-card">
+
+      <!-- Project thumbnail image -->
+      <div class="project-image-wrapper">
+        <img
+          src="img/hw2.png"
+          alt="Thumbnail for Actor Revenue Analysis with SQL and the Sakila Database"
+          class="project-image"
+        />
+      </div>
+
+      <div class="project-body">
+        <h3 class="project-title">Actor Revenue Analysis with SQL and the Sakila Database</h3>
+
+        <!-- Short summary written for a non-expert audience -->
+        <p class="project-summary">Analyzed a DVD rental database to identify which film actors drive the most revenue and rentals. Used advanced SQL techniques including multi-table JOINs, CTEs, and window functions to produce a manager-style report ranking actors by business performance.
+</p>
+
+        <!-- Tech stack as pill badges -->
+        <div class="tech-stack">
+          
+          <span class="tech-badge">SQL (MySQL)</span>
+          
+          <span class="tech-badge">Python</span>
+          
+          <span class="tech-badge">Adminer</span>
+          
+          <span class="tech-badge">pandas</span>
+          
+          <span class="tech-badge">Docker</span>
+          
+          <span class="tech-badge">Jupyter Notebooks</span>
+          
+        </div>
+
+        <!-- Collapsible details (problem / approach / results) -->
+        <details class="project-details">
+          <summary>More details</summary>
+
+          <div class="detail-block">
+            <h4>Problem</h4>
+            <p>Using the Sakila sample DVD rental database as part of a SQL analysis course project, the goal was to answer a practical business question: which actors generate the most revenue and rentals for the store? The intended audience was a simulated store manager or content acquisition team looking to make data-informed decisions about their film catalog.
+</p>
+          </div>
+
+          <div class="detail-block">
+            <h4>Approach</h4>
+            <p>Connected to a Dockerized MySQL instance of the Sakila database from a Jupyter notebook using Adminer. Wrote and validated a series of increasingly complex queries which involved multi-table JOINs linking actors to payments, GROUP BY and HAVING aggregations to filter high performers, a CTE to compare each actor&#39;s revenue against the store average, and a RANK() window function to produce a final ranked report table.
+</p>
+          </div>
+
+          <div class="detail-block">
+            <h4>Results &amp; Impact</h4>
+            <p>Produced a clean manager-style report ranking actors by total revenue and rental count, with each actor&#39;s performance benchmarked against the store-wide average. The project demonstrates end-to-end SQL analysis skills from raw relational data through a polished, reproducible reporting workflow.
+</p>
+          </div>
+        </details>
+
+        <!-- Links to the GitHub repo and notebook -->
+        <div class="project-links">
+          
+          <a href="https://github.com/omnessis/cmse492-hw02-omnessis" target="_blank" rel="noopener" class="btn btn-repo">
+            View Repo
+          </a>
+          
+          
+          <a href="https://github.com/omnessis/cmse492-hw02-omnessis/blob/main/HW02-IsabelOmness.ipynb" target="_blank" rel="noopener" class="btn btn-notebook">
+            View Notebook
+          </a>
+          
+        </div>
+      </div>
+
+    </article>
+    
+  </div>
+</section>
+
+<!-- ===== Contact section ===== -->
+<section id="contact" class="section contact-section">
+  <h2>Contact</h2>
+  <ul class="contact-list">
+    
+    <li>
+      <span class="contact-label">Email:</span>
+      <a href="mailto:isabelomness@gmail.com">isabelomness@gmail.com</a>
+    </li>
+    
+    
+    <li>
+      <span class="contact-label">LinkedIn:</span>
+      <a href="https://www.linkedin.com/in/isabel-omness-867691268/" target="_blank" rel="noopener">https://www.linkedin.com/in/isabel-omness-867691268/</a>
+    </li>
+    
+    
+    <li>
+      <span class="contact-label">GitHub:</span>
+      <a href="https://github.com/omnessis" target="_blank" rel="noopener">https://github.com/omnessis</a>
+    </li>
+    
+  </ul>
+</section>
+
+
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <p>Built with the Data Science Portfolio Template &mdash; powered by Python &amp; Jinja2.</p>
+  </footer>
+
+</body>
+</html>
