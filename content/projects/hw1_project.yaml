@@ -23,14 +23,13 @@ tech_stack:
 
 problem_statement: >
   As part of a data engineering and reproducibility course project, the
-  goal was to analyze January sales data across regions and customer
-  segments to answer the question: where is revenue coming from, and
-  which customer segments are driving it? The secondary goal was to
+  goal of the existing project was to analyze January sales data across
+  regions and customer segments. My personal goal was to
   build the pipeline in a way that anyone could reproduce the results
   with a single command.
 
 approach: >
-  Wrote a Python pipeline with separate source files handling
+  Understood/edited a Python pipeline with separate source files handling
   data loading and cleaning, and plot generation. The script
   merges sales transactions with a customer lookup table, builds a
   summary grouped by region, and outputs both a CSV report and two

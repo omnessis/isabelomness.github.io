@@ -31,7 +31,7 @@ problem_statement: >
 approach: >
   Connected to a Dockerized MySQL instance of the Sakila database from
   a Jupyter notebook using Adminer. Wrote and validated a series of
-  increasingly complex queries which involved multi-table JOINs linking actors to
+  complex queries which involved multi-table JOINs linking actors to
   payments, GROUP BY and HAVING aggregations to filter high performers,
   a CTE to compare each actor's revenue against the store average, and
   a RANK() window function to produce a final ranked report table.

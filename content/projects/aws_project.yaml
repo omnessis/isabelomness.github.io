@@ -23,26 +23,24 @@ tech_stack:
 
 problem_statement: >
   As part of a cloud computing course project, I worked with a simulated
-  agency operations scenario: given a 311 complaint at the moment it is
-  filed, can we predict how long it will take to resolve? The dataset was
-  a 170k-record instructor-provided sample of real NYC Open Data complaints,
-  used to practice building end-to-end ML pipelines in a cloud environment.
+  agency operations scenario: given a 311 complaint, can we predict how 
+  long it will take to resolve? The dataset was a 170k-record instructor-provided 
+  sample of real NYC Open Data complaints, used to practice building end-to-end ML 
+  pipelines in a cloud environment.
 
 approach: >
   Pulled data from S3 using Athena SQL queries and engineered features
   including agency, borough, complaint type, zip code, day of week, hour
   of day, and same-day complaint volume. Trained a SageMaker Linear Learner
   estimator (regressor) on an 80/20 train/test split, then evaluated against
-  a naive baseline using Batch Transform. The focus was on learning the full
-  AWS ML workflow, from raw data in S3 through model training and evaluation
-  on SageMaker.
+  a naive baseline. The focus was on learning the full AWS ML workflow, 
+  from raw data in S3 through model training and evaluation on SageMaker.
 
 results_impact: >
   The SageMaker Linear Learner model achieved an MAE of 1.85 days and RMSE
-  of 4.00 days, with an R² of 0.37, an improvement over the
+  of 4.00 days, with an R^2 of 0.37, an improvement over the
   naive mean baseline (MAE 2.77, RMSE 5.05). The project demonstrates a
-  full cloud ML workflow from raw S3 data through SageMaker training and
-  Batch Transform inference.
+  full cloud ML workflow from raw S3 data through SageMaker training.
 
 repo_url: "https://github.com/omnessis/aws-nyc311-omnessis"
 image_path: "img/aws.png"
