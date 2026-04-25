@@ -1,0 +1,48 @@
+# ============================================================
+# content/projects/example_project_2.yaml
+# ============================================================
+# Example project: Crowd Cheer Analysis at Spartan Football Games
+# Copy this file to create your own project entries.
+# ============================================================
+
+title: "Regional Sales Analysis with Python and Docker"
+
+short_summary: >
+  Built a reproducible sales analysis pipeline that cleans and merges
+  January transaction and customer data, produces a regional summary
+  table, and generates revenue bar charts by region and customer segment.
+  The project is fully containerized with Docker for easy reproducibility.
+
+tech_stack:
+  - Python
+  - pandas
+  - matplotlib
+  - seaborn
+  - Docker
+  - uv
+
+problem_statement: >
+  As part of a data engineering and reproducibility course project, the
+  goal was to analyze January sales data across regions and customer
+  segments to answer the question: where is revenue coming from, and
+  which customer segments are driving it? The secondary goal was to
+  build the pipeline in a way that anyone could reproduce the results
+  with a single command.
+
+approach: >
+  Wrote a Python pipeline with separate source files handling
+  data loading and cleaning, and plot generation. The script
+  merges sales transactions with a customer lookup table, builds a
+  summary grouped by region, and outputs both a CSV report and two
+  revenue bar charts. Packaged the entire workflow in a Dockerfile so
+  results can be reproduced with either a virtual environment or a
+  containerized run.
+results_impact: >
+  Produced a 12-row regional summary CSV and two revenue charts — one by
+  region and one by customer segment (added as a personalization of the
+  original analysis using seaborn).The project demonstrates skills in
+  Python, data cleaning and merging, visualization, and containerized 
+  reproducibility.
+
+repo_url: "https://github.com/omnessis/cmse492-hw01-omnessis"
+image_path: "img/hw1.png"

@@ -1,0 +1,48 @@
+# ============================================================
+# content/projects/example_project_2.yaml
+# ============================================================
+# Example project: Crowd Cheer Analysis at Spartan Football Games
+# Copy this file to create your own project entries.
+# ============================================================
+
+title: "Actor Revenue Analysis with SQL and the Sakila Database"
+
+short_summary: >
+  Analyzed a DVD rental database to identify which film actors drive the
+  most revenue and rentals. Used advanced SQL techniques including multi-table
+  JOINs, CTEs, and window functions to produce a manager-style report
+  ranking actors by business performance.
+
+tech_stack:
+  - SQL (MySQL)
+  - Python
+  - Adminer
+  - pandas
+  - Docker
+  - Jupyter Notebooks
+
+problem_statement: >
+  Using the Sakila sample DVD rental database as part of a SQL analysis
+  course project, the goal was to answer a practical business question:
+  which actors generate the most revenue and rentals for the store? The
+  intended audience was a simulated store manager or content acquisition
+  team looking to make data-informed decisions about their film catalog.
+
+approach: >
+  Connected to a Dockerized MySQL instance of the Sakila database from
+  a Jupyter notebook using Adminer. Wrote and validated a series of
+  increasingly complex queries which involved multi-table JOINs linking actors to
+  payments, GROUP BY and HAVING aggregations to filter high performers,
+  a CTE to compare each actor's revenue against the store average, and
+  a RANK() window function to produce a final ranked report table.
+
+results_impact: >
+  Produced a clean manager-style report ranking actors by total revenue
+  and rental count, with each actor's performance benchmarked against
+  the store-wide average. The project demonstrates end-to-end SQL
+  analysis skills from raw relational data through a polished,
+  reproducible reporting workflow.
+
+repo_url: "https://github.com/omnessis/cmse492-hw02-omnessis"
+notebook_url: "https://github.com/omnessis/cmse492-hw02-omnessis/blob/main/HW02-IsabelOmness.ipynb"
+image_path: "img/hw2.png"

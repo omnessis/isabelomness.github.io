@@ -6,24 +6,25 @@
 # information, and update portfolio_config.yaml to point to it.
 # ============================================================
 
-name: "Zeke the Wonder Dog"
-tagline: "Aspiring Data Scientist | MSU Mascot | Good Boy"
+name: "Isabel Omness"
+tagline: "Aspiring Data Scientist | Michigan State University Alumni"
 
 about: |
-  I'm a red English lab and one of Michigan State's beloved mascots, but
-  data science is my true calling. When I'm not leading the Spartans onto
-  the field, I'm wrangling datasets and building predictive models —
-  mostly with my nose, occasionally with my paws.  
+  I am a proud Michigan State University data science student graduating in May 2026.
+  Throughout my academic career, I have built and evaluated machine learning models,
+  worked extensively with data cleaning and analysis pipelines, and collaborated
+  with other data scientists on applied projects.
 
-  My projects focus on turning complex data into clear insights that
-  *any human (or dog) can act on*. I believe the best analysis is one
-  that fits on a single slide and can be explained to someone who just
-  woke up from a nap in the sun. Go Green.
+  My work spans the full data science workflow, from writing SQL queries against
+  relational databases to training and deploying models on cloud platforms.
+  I have hands-on experience with Python, SQL, AWS (S3, Athena, SageMaker),
+  Docker, pandas, scikit-learn, matplotlib, and seaborn.
 
-  _This example portfolio was inspired by Zeke IV, who passed in March of 2026.
-  He played the role of Zeke the Wonder Dog for a decade._
+  My projects focus on turning complex data into clear, actionable insights.
+
+  
 
 # Contact information — remove any fields you prefer not to share
-email: "zeke@msu.edu"
-linkedin: "https://www.linkedin.com/in/zeke-the-wonder-dog"
-github: "https://github.com/zeke-wonder-dog"
+email: "isabelomness@gmail.com"
+linkedin: "https://www.linkedin.com/in/isabel-omness-867691268/"
+github: "https://github.com/omnessis"

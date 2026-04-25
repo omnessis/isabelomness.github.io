@@ -1,0 +1,110 @@
+/* ============================================================
+   themes/sage.css  —  Soft sage green theme.
+   Primary colors:
+     Deep Sage      #2D4A3E
+     Sage Green     #7A9E7E
+     Light Sage     #B2C9B0
+   Accent:
+     Warm Cream     #F5F0E8
+     Muted Gold     #C9A84C
+   ============================================================ */
+
+body {
+    background-color: #1e2f28;
+    color: #e8ede6;
+}
+
+a {
+    color: #B2C9B0;
+}
+
+a:hover {
+    color: #d4e8d2;
+    text-decoration: none;
+}
+
+/* Header */
+.site-header {
+    background-color: #2D4A3E;
+    border-bottom: 4px solid #7A9E7E;
+}
+
+.header-name {
+    color: #F5F0E8;
+}
+
+.header-tagline {
+    color: #B2C9B0;
+}
+
+.site-nav a {
+    color: #B2C9B0;
+}
+
+.site-nav a:hover {
+    color: #F5F0E8;
+}
+
+/* Section headings */
+.section h2 {
+    color: #e8ede6;
+    border-color: #7A9E7E;
+}
+
+/* Project card */
+.project-card {
+    background-color: #2D4A3E;
+    border: 1px solid #4a7a65;
+}
+
+.project-title {
+    color: #F5F0E8;
+}
+
+.project-summary {
+    color: #c8d8c6;
+}
+
+/* Tech badges */
+.tech-badge {
+    background-color: #1e2f28;
+    color: #B2C9B0;
+    border: 1px solid #4a7a65;
+}
+
+/* Details */
+.project-details {
+    color: #B2C9B0;
+}
+
+.detail-block h4 {
+    color: #C9A84C;
+}
+
+/* Buttons */
+.btn-repo {
+    background-color: #7A9E7E;
+    color: #1e2f28;
+}
+
+.btn-notebook {
+    background-color: #2D4A3E;
+    color: #e8ede6;
+    border: 1px solid #4a7a65;
+}
+
+/* Contact */
+.contact-list a {
+    color: #B2C9B0;
+}
+
+/* Footer */
+.site-footer {
+    background-color: #2D4A3E;
+    border-top: 4px solid #7A9E7E;
+    color: #B2C9B0;
+}
+
+.site-footer a {
+    color: #B2C9B0;
+}
